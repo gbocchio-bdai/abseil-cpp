@@ -725,13 +725,14 @@ int main() { return 0; }
 ]==]
   ABSL_INTERNAL_AT_LEAST_CXX20)
 
-if(ABSL_INTERNAL_AT_LEAST_CXX20)
-  set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_20)
-elseif(ABSL_INTERNAL_AT_LEAST_CXX17)
-  set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_17)
-else()
-  set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_14)
-endif()
+set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_23)
+# if(ABSL_INTERNAL_AT_LEAST_CXX20)
+#   set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_20)
+# elseif(ABSL_INTERNAL_AT_LEAST_CXX17)
+#   set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_17)
+# else()
+#   set(ABSL_INTERNAL_CXX_STD_FEATURE cxx_std_14)
+# endif()
 
 function(absl_internal_dll_contains)
   cmake_parse_arguments(ABSL_INTERNAL_DLL

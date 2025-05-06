@@ -53,7 +53,7 @@ for compilation_mode in ${ABSL_CMAKE_BUILD_TYPES}; do
         -DBUILD_SHARED_LIBS=${build_shared} \
         -DABSL_BUILD_TESTING=ON \
         -DCMAKE_BUILD_TYPE=${compilation_mode} \
-        -DCMAKE_CXX_STANDARD=14 \
+        -DCMAKE_CXX_STANDARD=17 \
         -DCMAKE_MODULE_LINKER_FLAGS="-Wl,--no-undefined" \
         -DABSL_BUILD_MONOLITHIC_SHARED_LIBS=${monolithic_shared} \
         -DABSL_GOOGLETEST_DOWNLOAD_URL="${ABSL_GOOGLETEST_DOWNLOAD_URL}"

@@ -55,7 +55,7 @@ fi
 ${BAZEL_BIN} test ... \
   --copt="-DGTEST_REMOVE_LEGACY_TEST_CASEAPI_=1" \
   --copt="-Werror" \
-  --cxxopt="-std=c++14" \
+  --cxxopt="-std=c++23" \
   --enable_bzlmod=true \
   --features=external_include_paths \
   --keep_going \
